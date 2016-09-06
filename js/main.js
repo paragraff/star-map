@@ -477,22 +477,17 @@ function animate() {
 
 		if (isZoomedIn && camera.position.z < markerThreshold.min && $detailContainer.css('display') == 'none' && $starName.css('display') == 'none') {
 			$starName.fadeIn();
-			console.log('isZoomedIn');
 		} else if ((isZoomedToSolarSystem || $detailContainer.css('display') != 'none') && $starName.css('opacity') == 1.0) {
 			$starName.fadeOut();
-			console.log('isZoomedOut');
 		}
 
 		if (isZoomedIn && $cssContainer.css('display') != 'none') {
-			console.log('isZoomedIn2');
 			$cssContainer.css({ display: 'none' });
 		} else if (!isZoomedIn && $cssContainer.css('display') == 'none') {
-			console.log('isZoomedOut2');
 			$cssContainer.css({ display: 'block' });
 		}
 
 		if (isZoomedToSolarSystem && $detailContainer.css('display') != 'none' && !$detailContainer.hasClass('about')) {
-			console.log('solarsystem');
 			$detailContainer.fadeOut();
 		}
 

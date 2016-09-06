@@ -211,7 +211,7 @@ function makeSolarSystem(){
 			this.visible = false;
 	}
 
-	//makeSunEarthDiagram();
+	makeSunEarthDiagram();
 
 	//	pluto?
 	//	still not a planet	
